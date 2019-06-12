@@ -49,11 +49,33 @@
             <input id="excel" type="checkbox" name="software"><label for="excel">excel</label>
             <input id="powerpoint" type="checkbox" name="software"><label for="powerpoint">powerpoint</label>
             <input id="mysql" type="checkbox" name="software"><label for="mysql">mysql</label>
-            <input id="vbc" type="checkbox" name="software"><label for="vbc">vbc</label>
+            <input id="vbc" type="checkbox" name="software"><label for="vbc">vbc</label>            
+            
         </div>
+        <div><label for="email"></label>e-amil<input id="email" type="email"></div>
+        <div><label for="color">最喜歡的顏色:</label><input id="color" type="color"></div>
+        
+        <div><select>
+            <optgroup label="台中">台中</optgroup>
+            <option>西屯</option>
+            <option>南屯</option>
+        </select></div>
 
+        <div>
+                <label for="high">身高</label>
+                <input id="high" type="range" min="140" max="200" step="1" oninput="Valueupdate()">
+                <label id="value" for=""></label>
+                <output id="result"></output>
+            </div>
+
+        <input type="submit">
    </form>
-    
+    <script>
+        function Valueupdate(){
+            document.getElementById("value").innerText=document.getElementById("high").value;
+            document.getElementById("result").value=document.getElementById("high").value;
+        }
+    </script>
     
 </body>
 

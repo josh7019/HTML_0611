@@ -1,0 +1,15 @@
+p{
+    font-size: 100px;
+}
+.fruit{
+    font-size: 2rem;
+}
+#apple{
+    background-color: aquamarine;
+}
+#banana{
+    background-color: brown;
+}
+#orange{
+    background-color: orange;
+}

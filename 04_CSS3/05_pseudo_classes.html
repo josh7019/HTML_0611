@@ -5,16 +5,30 @@
     <title>學習清單總整理</title>
     <style type="text/css">
         /* 透過<a>標籤，設定字型 & 取消底線 */
-
+             /* a{
+                font-size: 3rem;
+                text-decoration: none;
+            }  */
         /* (link) 設定超連結未連結時的顏色 */
-
+            /* a:link{
+                color:blue;
+            } 
         /* (visited) 設定超連結已連結過的顏色 */
-
+         a:link{
+                color:blueviolet;
+            } 
         /* (hover) 設定滑鼠移至連結上方時的顏色 */
-
+            /* a:hover{
+                color:gray;
+                font-size: 50px;
+            }   */
         /* (active) 設定超連結點選連結當下的顏色 */
-
+             a:active{
+                color:red;
+            } 
+            
     </style>
+    <link rel="stylesheet" href="navStyle.css">
 </head>
 
 <body>
@@ -28,6 +42,19 @@
     <!-- 3. 設定點選項目的時候，會對應到w3c的各項連結 -->
     <!-- 4. 引用 navStyle.css -->
     <!-- 5. 對照 navStyle.css 設定網頁元素 -->
+        <nav class="navBar">
+            
+            
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JavaScript</a></li>
+            <li><a href="">SQL</a></li>
+            <li><a href="">PHP</a></li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">jQuery</a></li>
+                
+            
+        </nav>
 
     <p><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">CSS Pseudo-classes</a></p>
 
